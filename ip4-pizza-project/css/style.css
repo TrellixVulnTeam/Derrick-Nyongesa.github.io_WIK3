@@ -1,0 +1,132 @@
+body{
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header{
+    border-bottom: #f96816 5px solid;
+}
+
+.highlight{
+    color:#f96816;
+    font-weight: bold;
+}
+
+nav{
+    text-align: center;
+}
+
+nav h1{
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+nav p{
+    color: #0088cc;
+}
+
+
+
+#images{
+    display: inline;
+}
+
+img{
+    height: 199px;
+    width: 199px;
+}
+
+#img1{
+    position: absolute;
+    top: 0%;
+    left: 0;
+}
+
+#img2{
+    position: absolute;
+    top: 0%;
+    right: 0;
+}
+
+
+
+.box{
+    background-color: #0088cc;
+    padding: 25px;
+}
+
+
+
+.button{
+    padding: 1rem;
+    background-color:#f96816;
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 20px;
+    margin: 15px;
+}
+
+
+.button2{
+    margin: 15px;
+}
+
+
+
+h2{
+    color: #0088cc;
+}
+
+
+
+footer{
+    text-align: center;
+    background-color: #f96816;
+}
+
+
+
+.text-input{
+    background-color: #000000;
+}
+
+.top{
+    font-size: 15px;
+}
+
+
+
+#modal-body,
+#modalLabel{
+    color: #f96816;
+}
+
+
+
+.cartItem{
+    color: #0088cc;
+    cursor: pointer;
+}
+
+.cartItem:hover{
+    color: #f96816;
+    font-weight: bold;
+}
+
+
+
+.cartWell, 
+.pickup-delivery, 
+.pickupNow, 
+.deliveryNow, 
+#show-pizza {
+    display: none;
+}
