@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <h1 class="text-center">Best Quotes About Life</h1>
+        <div class="row">
+            <div class="col-sm-4">
+                <app-quote-form (addQuote)='addNewQuote($event)'></app-quote-form>
+            </div>
+            <div class="col-sm-8">
+                <div *ngFor='let quote of quotes; let i=index'>
+                    <ul id="quotes">
+                        <li>
+                            <p class="head"> A quote posted by 
+                                <span class="name">{{quote.name}}</span> on {{quote.datePosted|date}}
+                                <button (click)='toggleQuote(i)' id="quotesButton">See More</button>
+                            </p>
+                            <p data-wow-delay="1s" appHighlight *ngIf="highestUpvote()===quote.upvotes && quote.upvotes>0">
+                                {{quote.quote}}
+                            </p>
+                            <p data-wow-delay="1s" *ngIf="highestUpvote()!==quote.upvotes || quote.upvotes===0">
+                                {{quote.quote}}
+                            </p>
+                            
+                            <button (click)="upvote(i)" id="upvotes">Upvote</button>
+                            <button (click)="downvote(i)" id="downvotes">Downvote</button>
+                                <app-quote-details *ngIf='quote.showDetails' [quote]='quote' (toDelete)='deleteThis($event, i)'></app-quote-details>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+          </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="form-area">
+        <h2 class="text-center">Create your own Quote</h2>
+        <form (ngSubmit)='submitQuote()' #quoteForm='ngForm' id="form">
+            <div class="form-group">
+                <label for="name">Name</label><br>
+                <input type="text" class="form-control" id="name" placeholder="Enter your Name" [(ngModel)]="newQuote.name" name="name" #name='ngModel' required>
+                <div [hidden]="name.valid || name.pristine" class="alert alert-danger"><p>Your name is required</p></div>
+            </div>
+            <div class="form-group">
+                <label for="quote">Write the Quote</label><br>
+                <textarea name=""  class="form-control"id="" cols="30" rows="10" id="quote" placeholder="Write the Quote" [(ngModel)]="newQuote.quote" name="quote" #quote='ngModel' required></textarea>
+                <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger"><p>A quote is required</p></div>
+            </div>
+            <div class="form-group">
+                <label for="author">Author of the Quote</label><br>
+                <input type="text" class="form-control" id="author" placeholder="Enter the Author" [(ngModel)]="newQuote.author" name="author" #author='ngModel' required>
+                <div [hidden]="author.valid || author.pristine" class="alert alert-danger"><p>The author's name is required</p></div>
+            </div>
+            <div class="form-group">
+                <label for="posted">Date</label><br>
+                <input type="date" class="form-control" id="posted" [(ngModel)]="newQuote.datePosted" name="datePosted" #datePosted='ngModel' required>
+                <div [hidden]="datePosted.valid || datePosted.pristine" class="alert alert-danger"><p>Date is required</p></div>
+            </div><br>
+            <button>Add Quote</button>
+        </form>
+    </div>
+</body>
+</html>

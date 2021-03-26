@@ -1,0 +1,72 @@
+body {
+    background: #92bde7;
+    color: #485e74;
+    line-height: 1.6;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1em;
+    font-size: 16px;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+#quotes{
+    list-style: none;
+    padding: 20px;
+    border: #ccc solid 1px;
+    margin-bottom: 20px;
+    background-color:#e6e6e6;
+}
+
+.name{
+    font-weight: bold;
+}
+.head{
+    color: #0088cc;
+}
+
+button{
+    height: 38px;
+    border: 0;
+    padding: 0 20px 0 20px;
+    font-weight: bold;
+}
+
+#quotesButton{
+    margin-left: 30px;
+    background-color: #0088cc;
+    color: #ffffff;
+    border-radius: 20px;
+    opacity: 1;
+}
+
+#quotesButton:hover{
+    opacity: 0.5;
+    transition: 1.3s;
+    color: #000000;
+}
+
+#upvotes{
+    height: 38px;
+    background-color:lime;
+    border: 0;
+    padding: 0 20px 0 20px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+#downvotes{
+    height: 38px;
+    background-color: #dc143c;
+    border: 0;
+    padding: 0 20px 0 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-left: 30px;
+}
+  
+

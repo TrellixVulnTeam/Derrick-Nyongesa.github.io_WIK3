@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+#form-area{
+    background:rgb(3, 155, 211);
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+button{
+    height: 38px;
+    background-color:rgb(146, 40, 62);
+    border: 0;
+    padding: 0 20px 0 20px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+button:hover,
+button:focus{
+    background: #92bde7;
+    color: blue;
+    outline: 0;
+    transition: background-color 2s ease-out;
+}

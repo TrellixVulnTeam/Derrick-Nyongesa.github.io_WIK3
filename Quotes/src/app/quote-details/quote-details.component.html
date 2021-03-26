@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="details">
+        <p class="head">This Quote is from <span class="name">{{quote.author}}</span></p>
+        <p>Posted {{quote.datePosted|timePassed}} days ago.</p>
+        <p>Upvotes:<span class="name">{{quote.upvotes}}</span></p>
+        <p>Downvotes:<span class="name">{{quote.downvotes}}</span></p>
+        <button (click)='deleteQuote(true)'>Delete this Quote</button>
+    </div>
+    
+</body>
+</html>
